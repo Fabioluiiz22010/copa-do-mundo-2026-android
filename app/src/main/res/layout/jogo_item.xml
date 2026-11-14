@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/fifa_card"
+    android:padding="12dp">
+
+    <!-- Seleções + Placar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Casa -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlagCasa"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/tvCasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fifa_text"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Placar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/fifa_surface"
+            android:padding="6dp">
+
+            <EditText
+                android:id="@+id/edtGolsCasa"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/fifa_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/fifa_accent"
+                android:maxLength="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" × "
+                android:textColor="@color/fifa_text_secondary"
+                android:textSize="18sp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"/>
+
+            <EditText
+                android:id="@+id/edtGolsFora"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="@color/fifa_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/fifa_accent"
+                android:maxLength="2"/>
+        </LinearLayout>
+
+        <!-- Fora -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgFlagFora"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/tvFora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fifa_text"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botão salvar -->
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:text="SALVAR PLACAR"
+        android:textSize="12sp"
+        android:textColor="@color/fifa_dark"
+        android:backgroundTint="@color/fifa_accent"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"/>
+</LinearLayout>

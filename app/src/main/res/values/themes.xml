@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.CopaDoMundo2026.oMundo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/fifa_accent</item>
+        <item name="colorPrimaryVariant">@color/fifa_dark</item>
+        <item name="colorOnPrimary">@color/fifa_dark</item>
+        <item name="android:windowBackground">@color/fifa_dark</item>
+        <item name="android:statusBarColor">@color/fifa_dark</item>
+        <item name="android:navigationBarColor">@color/fifa_dark</item>
+    </style>
+</resources>

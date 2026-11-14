@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fifa_dark">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fifa_surface"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 COPA DO MUNDO"
+            android:textColor="@color/fifa_gold"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2026"
+            android:textColor="@color/fifa_accent"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Criar simulação -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/fifa_card"
+        android:layout_margin="12dp"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/edtNomeSimulacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da simulação"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/fifa_text_secondary"
+            android:backgroundTint="@color/fifa_accent"
+            android:padding="10dp"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnNovaSimulacao"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="NOVA SIMULAÇÃO"
+            android:textColor="@color/fifa_dark"
+            android:backgroundTint="@color/fifa_accent"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIMULAÇÕES SALVAS"
+        android:textColor="@color/fifa_text_secondary"
+        android:textSize="11sp"
+        android:letterSpacing="0.15"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/lsvSimulacoes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/fifa_surface"
+        android:dividerHeight="1dp"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>

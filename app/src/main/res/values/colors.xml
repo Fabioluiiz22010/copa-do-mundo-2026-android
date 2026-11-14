@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fifa_dark">#0A0E1A</color>
+    <color name="fifa_surface">#141929</color>
+    <color name="fifa_card">#1C2333</color>
+    <color name="fifa_accent">#00D4FF</color>
+    <color name="fifa_gold">#FFD700</color>
+    <color name="fifa_text">#FFFFFF</color>
+    <color name="fifa_text_secondary">#8A9BB5</color>
+    <color name="fifa_green">#00C853</color>
+    <color name="fifa_red">#FF3D3D</color>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fifa_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fifa_surface"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvTituloSimulacao"
+            android:textColor="@color/fifa_text"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="CLASSIFICAÇÃO"
+            android:textSize="11sp"
+            android:textColor="@color/fifa_accent"
+            android:backgroundTint="@color/fifa_card"
+            android:onClick="ClassificacaoClique"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="MATA-MATA"
+            android:textSize="11sp"
+            android:textColor="@color/fifa_gold"
+            android:backgroundTint="@color/fifa_card"
+            android:onClick="MataMataClique"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECIONE UM GRUPO"
+        android:textColor="@color/fifa_text_secondary"
+        android:textSize="11sp"
+        android:letterSpacing="0.15"
+        android:paddingStart="16dp"
+        android:paddingBottom="4dp"/>
+
+    <ListView
+        android:id="@+id/lsvGrupos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/fifa_dark"
+        android:dividerHeight="2dp"/>
+</LinearLayout>

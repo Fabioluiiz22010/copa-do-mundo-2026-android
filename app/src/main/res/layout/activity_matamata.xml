@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fifa_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fifa_surface"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvTituloMataMata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fifa_gold"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="OITAVAS DE FINAL" android:textColor="@color/fifa_accent"
+            android:textSize="11sp" android:letterSpacing="0.15"
+            android:paddingBottom="4dp" android:textStyle="bold"/>
+        <ListView android:id="@+id/lsvOitavas" android:layout_width="match_parent"
+            android:layout_height="640dp" android:divider="@color/fifa_dark" android:dividerHeight="2dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="QUARTAS DE FINAL" android:textColor="@color/fifa_accent"
+            android:textSize="11sp" android:letterSpacing="0.15"
+            android:paddingTop="12dp" android:paddingBottom="4dp" android:textStyle="bold"/>
+        <ListView android:id="@+id/lsvQuartas" android:layout_width="match_parent"
+            android:layout_height="320dp" android:divider="@color/fifa_dark" android:dividerHeight="2dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="SEMIFINAL" android:textColor="@color/fifa_accent"
+            android:textSize="11sp" android:letterSpacing="0.15"
+            android:paddingTop="12dp" android:paddingBottom="4dp" android:textStyle="bold"/>
+        <ListView android:id="@+id/lsvSemi" android:layout_width="match_parent"
+            android:layout_height="160dp" android:divider="@color/fifa_dark" android:dividerHeight="2dp"/>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="🏆 FINAL" android:textColor="@color/fifa_gold"
+            android:textSize="14sp" android:letterSpacing="0.1"
+            android:paddingTop="12dp" android:paddingBottom="4dp" android:textStyle="bold"/>
+        <ListView android:id="@+id/lsvFinal" android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+</ScrollView>
